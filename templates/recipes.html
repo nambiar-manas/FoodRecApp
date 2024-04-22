@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A power solutions company" />
+    <meta
+      name="keywords"
+      content="inverters, power solution, solar panel, ups, captive power, maintenance services, batteries "
+    />
+    <title>Food Recommender App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css"
+      integrity="sha256-2SjB4U+w1reKQrhbbJOiQFARkAXA5CGoyk559PJeG58="
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="../static/css/main.css" /> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+
+  </head>
+  <body>
+    <section id="main_recipe">
+      <h2>{{ selected_dish['name'] }}</h2>
+      <div class="recipe_display">
+        <div class="recipe_display_box">
+          <a href="/cluster/{{ selected_dish['cluster'] }}/{{ selected_dish['id']}}">
+            {% if selected_dish['image'] %}
+            <img src="{{ selected_dish['image'] }}" alt="{{ selected_dish['name'] }}">
+            {% endif %}
+          </a>
+        </div>
+        <div class="recipe_display_box">
+            <h3>Cuisines</h3>
+            <ul class="no-decoration">
+                {% for cuisine in selected_dish['cuisines'] %}
+                <li>
+                    {{cuisine}}
+                </li>
+                {% endfor %}
+            </ul>
+            <h3>Description</h3>
+            <p>
+              {% set clean_summary = selected_dish['summary'].replace('<br>', '') %}
+              {{ clean_summary }}
+            </p>
+        </div>
+      </div>
+    </section>
+    <section id="neighbour_recipes">
+      <h2>Recommended Recipes</h2>
+      <div class="neighbours">
+        {% for recipe in cluster_dishes %}
+          {% if recipe['id'] != selected_dish['id'] %}
+            <div class="neighbours-box">
+              <a href="/cluster/{{ recipe['cluster'] }}/{{ recipe['id']}}">
+                <h3>{{ recipe['name'] }}</h3>
+                <img src="{{ recipe['image'] }}" alt="{{ recipe['name'] }}">
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+        <a class="btn_home" href="/">View Recipes</a>
+      </div>
+    </section>
+    <section id="team-container">
+      <div class="team">
+        <h2>Meet the Team</h2>
+        <p>...We are backed by a team of professionals</p>
+      </div>
+    </section>
+    <section id="main-footer">
+      <footer>
+        <p>
+          Copyright &copy; 2024 MSDS 603 - Grp09 | Designed by :
+          <a href="https://www.elprinz.com" target="_blank"> Elprinz.com</a>
+        </p>
+      </footer>
+    </section>
+
+    <script src="js/stickymenu.js"></script>
+  </body>
+</html>

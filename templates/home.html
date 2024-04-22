@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A power solutions company" />
+    <meta
+      name="keywords"
+      content="inverters, power solution, solar panel, ups, captive power, maintenance services, batteries "
+    />
+    <title>Food Recommender App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css"
+      integrity="sha256-2SjB4U+w1reKQrhbbJOiQFARkAXA5CGoyk559PJeG58="
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="../static/css/main.css" /> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  
+  </head>
+  <body>
+    <section id="advert-container">
+      <div class="advert">
+        <div><h2>Let help you narrow down that recipe</h2></div>
+      </div>
+    </section>
+    <section id="services-container">
+      <h2>Recipes</h2>
+      <div class="services">
+        <div class="services-box">
+          <a href="/cluster/{{ recipes[0]['cluster'] }}/{{ recipes[0]['id'] }}">
+            <h3>{{ recipes[0]['name'] }}</h3>
+            <img src="{{ recipes[0]['image'] }}" alt="">
+            <!-- <ul>
+                <li>Vegan : {{ recipes[0]['vegan'] }}</li>
+            </ul> -->
+          </a>
+        </div>
+        <div class="services-box">
+          <a href="/cluster/{{ recipes[1]['cluster'] }}/{{ recipes[1]['id'] }}">
+            <h3>{{ recipes[1]['name'] }}</h3>
+            <img src="{{ recipes[1]['image'] }}" alt="">
+            <!-- <ul>
+                <li class="products">Vegan : {{ recipes[1]['vegan'] }}</li>
+            </ul> -->
+          </a>
+        </div>
+       
+        <div class="services-box">
+          <a href="/cluster/{{ recipes[2]['cluster'] }}/{{ recipes[2]['id'] }}">
+            <h3>{{ recipes[2]['name'] }}</h3>
+            <img src="{{ recipes[2]['image'] }}" alt="">
+            <!-- <ul>
+                <li class="products">Vegan : {{ recipes[2]['vegan'] }}</li>
+            </ul> -->
+          </a>
+        </div>
+        <div class="services-box">
+          <a href="/cluster/{{ recipes[3]['cluster'] }}/{{ recipes[3]['id'] }}">
+            <h3>{{ recipes[3]['name'] }}</h3>
+            <img src="{{ recipes[3]['image'] }}" alt="">
+            <!-- <ul>
+                <li class="products">Vegan : {{ recipes[3]['vegan'] }}</li>
+            </ul> -->
+          </a>
+        </div>
+        <a class="btn_home" href="/">Select Cuisine</a>
+      </div>
+    </section>
+    <section id="team-container">
+      <div class="team">
+        <h2>Meet the Team</h2>
+        <p>...We are backed by a team of professionals</p>
+      </div>
+    </section>
+    <section id="main-footer">
+      <footer>
+        <p>
+          Copyright &copy; 2024 MSDS 603 - Grp09 | Designed by :
+          <a href="https://www.elprinz.com" target="_blank"> Elprinz.com</a>
+        </p>
+      </footer>
+    </section>
+
+    <script src="js/stickymenu.js"></script>
+  </body>
+</html>

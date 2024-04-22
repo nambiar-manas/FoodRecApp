@@ -1,0 +1,927 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Media queries */
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .quote {
+    float: left;
+    margin-left: 35px;
+    margin-top: 5px;
+    z-index: 1;
+  }
+
+  .left-menu {
+    float: left;
+    margin-top: -3.5px;
+    margin-left: -200px;
+    margin-right: 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .left-menu li {
+    height: 47px;
+    background: #2b2e33;
+  }
+
+  .left-menu a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(to right, #02a9d3, #2b2e33);
+    bottom: -15px;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+  }
+
+  .search-btn {
+    float: left;
+    background: #02a9d3;
+    width: 70px;
+    height: 40px;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
+    margin-top: 13px;
+    margin-left: 5px;
+    z-index: 2;
+  }
+  .search-input input {
+    float: left;
+    height: 40px;
+    width: 350px;
+    padding: 12px 10px;
+    font-size: 1rem;
+    margin-top: 13px;
+    border: 1px solid #02a9d3;
+  }
+  .desc-box {
+    float: left;
+    width: 33.3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    opacity: 0.8;
+    color: #fff;
+  }
+  .who-we-are {
+    background: #02a9d3;
+    color: #2b2e33;
+  }
+  .who-we-are p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .what-we-do {
+    background: #2b2e33;
+    color: #02a9d3;
+  }
+  .what-we-do p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .why-we-do {
+    background: #02a9d3;
+    color: #2b2e33;
+  }
+  .why-we-do p {
+    font-size: 15px;
+  }
+  .tabdisplay {
+    width: 90%;
+    left: 5%;
+  }
+  .vision-tabs button {
+    width: 32.5%;
+  }
+  .about-ad-text {
+    padding: 20px;
+    top: 20%;
+    margin-left: -25px;
+  }
+  .about-ad-img {
+    float: left;
+    margin-top: 80px;
+    width: 400px;
+    height: 250px;
+    margin-left: 450px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .quote {
+    float: none;
+    margin-left: 20px;
+    margin-top: -10px;
+    z-index: 1;
+  }
+  .quote a {
+    transform: scale(0.8);
+  }
+  .left-menu {
+    float: left;
+    margin-top: -3.5px;
+    margin-left: -200px;
+    margin-right: 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .left-menu li {
+    height: 47px;
+    background: #2b2e33;
+  }
+
+  .left-menu a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(to right, #02a9d3, #2b2e33);
+    bottom: -15px;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+  }
+
+  .search-btn {
+    float: left;
+    background: #02a9d3;
+    width: 70px;
+    height: 40px;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
+    margin-top: 13px;
+    margin-left: 5px;
+    z-index: 2;
+  }
+  .search-input input {
+    float: left;
+    height: 40px;
+    width: 280px;
+    padding: 12px 10px;
+    font-size: 1rem;
+    margin-top: 13px;
+    border: 1px solid #02a9d3;
+  }
+  .desc-box {
+    float: left;
+    width: 33.3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    opacity: 0.8;
+    color: #fff;
+  }
+  .who-we-are {
+    background: #02a9d3;
+    color: #2b2e33;
+  }
+  .who-we-are p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .what-we-do {
+    background: #2b2e33;
+    color: #02a9d3;
+  }
+  .what-we-do p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .why-we-do {
+    background: #02a9d3;
+    color: #2b2e33;
+  }
+  .why-we-do p {
+    font-size: 15px;
+  }
+  .tabdisplay {
+    width: 90%;
+    left: 5%;
+  }
+  .vision-tabs button {
+    width: 32.5%;
+  }
+  .about-ad-text {
+    padding: 20px;
+    top: 20%;
+    margin-left: -25px;
+  }
+  .about-ad-img {
+    float: left;
+    margin-top: 80px;
+    width: 370px;
+    height: 250px;
+    margin-left: 390px;
+  }
+  /* Service.html page */
+  .service-showcase > .about-title {
+    width: 200px;
+  }
+  #services-title {
+    height: 40vh;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .top-header {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .logo {
+    float: none;
+  }
+  .logo-word {
+    float: none;
+    width: 100%;
+    margin-top: 0;
+    z-index: 1;
+  }
+  .top-contact {
+    float: none;
+    z-index: 1;
+  }
+  .top-contact:after {
+    content: "";
+    border-bottom: 1px solid #02a9d3;
+    width: 100%;
+    display: block;
+    height: 1px;
+    margin: -5px 1px;
+    opacity: 0.2;
+  }
+  .top-email {
+    float: none;
+  }
+  .quote {
+    float: none;
+    margin-left: 10px;
+    margin-top: -10px;
+    z-index: 1;
+  }
+  .quote a {
+    transform: scale(0.8);
+  }
+  .about-menu {
+    background: none;
+    display: block;
+  }
+  .left-menu {
+    float: none;
+    position: fixed;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+    background: var(--primary-color);
+    overflow-y: hidden;
+  }
+  a.nav-icon {
+    position: fixed;
+    font-weight: 300;
+    transform: scale(0.88);
+  }
+  .btn-close {
+    position: fixed;
+    font-weight: 300;
+    transform: scale(0.8);
+  }
+  .menu-small {
+    margin-top: 200px;
+  }
+  .left-menu a::before {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  #about-showcase-container {
+    height: 80vh;
+    z-index: -1;
+  }
+  .about-showcase {
+    top: 30%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("../img/electricity_bg_2.jpg") no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-title {
+    position: absolute;
+    background: #2b2e33;
+    color: #02a9d3;
+    opacity: 0.4;
+    width: 300px;
+    height: 50px;
+    margin: 150px auto;
+  }
+  #about-description {
+    height: 100%;
+  }
+  .desc-box {
+    float: none;
+    width: 100%;
+    height: 200%;
+    padding: 2rem;
+  }
+
+  .what-we-do {
+    color: #fff;
+  }
+  #vision-container {
+    height: 80vh;
+  }
+  .vision-showcase {
+    background: url("../img/electricity_bg_2.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .vision-tabs button {
+    width: 32%;
+    height: 50px;
+    font-size: 13px;
+    text-align: center;
+    justify-content: baseline;
+  }
+  .tabdisplay {
+    width: 100%;
+    height: 97%;
+    top: 2%;
+    margin: 0;
+    left: 0;
+    border: 0;
+  }
+  .tabcon {
+    height: 92.5%;
+    padding: 7px 2px;
+  }
+  .tabcon p {
+    font-size: 14px;
+  }
+  #about-advert-container {
+    height: 70vh;
+  }
+  .about-advert-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ad-box {
+    float: none;
+    width: 100%;
+  }
+  .ad-box a {
+    transform: scale(0.8);
+  }
+  .ad-box h2 {
+    font-size: 1.5rem;
+  }
+  .about-ad-text {
+    top: 0;
+    margin: 0;
+  }
+  .about-ad-img {
+    float: none;
+    margin: 0;
+    width: 400px;
+    height: 200px;
+    top: 50%;
+    box-shadow: 1px 1px 5px #02a9d3;
+  }
+  /* Service.html Page */
+  .service-showcase {
+    top: 30%;
+    background: url("../img/light_bg_2.jpg") no-repeat -50px 5px;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-showcase > .about-title {
+    width: 200px;
+    text-align: center;
+  }
+  #services-title {
+    height: 40vh;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .services-caption {
+    position: absolute;
+    width: 90%;
+    height: 85%;
+    margin-left: -30px;
+  }
+  .services-caption p {
+    font-size: 15px;
+    padding: 2%;
+  }
+  .container {
+    display: inline-block;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    width: 100%;
+  }
+  .container > div {
+    grid-column: none;
+    width: 98%;
+    margin: 3px auto;
+    overflow: hidden;
+  }
+  #request {
+    height: 35vh;
+  }
+  .request-quote {
+    width: 100%;
+  }
+  .request-quote p {
+    float: none;
+    margin-top: 5px;
+  }
+  .request-quote a {
+    float: none;
+    transform: scale(0.8);
+  }
+  .sales {
+    animation: slidebgsales 10s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background: url("../img/light_bg_2.jpg");
+    background-attachment: fixed;
+    color: #fff;
+  }
+  .support {
+    animation: slidebgsupport 10s linear infinite 0s;
+    animation-timing-function: ease-in;
+    background: url("../img/CCTV_6.jpg");
+    background-attachment: fixed;
+    color: #fff;
+  }
+  .tech {
+    animation: slidebgtech 10s linear infinite 0s;
+    animation-timing-function: ease-out;
+    background: url("../img/CCTV_7.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+  }
+
+  /* Contact.html page */
+  #contact-container {
+    height: 80vh;
+    margin-top: 140px;
+    z-index: -1;
+  }
+
+  @keyframes slidebgsales {
+    0% {
+      background: url("../img/Solar-Inverter.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    /* 25% {
+      background: url("../img/portable-diesel-generator.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    } */
+
+    50% {
+      background: url("../img/ups-1.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    /* 75% {
+      background: url("../img/kohler-gens.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    } */
+    100% {
+      background: url("../img/CCTV_7.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+  @keyframes slidebgsupport {
+    0% {
+      background: url("../img/remote-monitoring-2.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    /* 25% {
+      background: url("../img/remote-monitoring-2.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    } */
+
+    50% {
+      background: url("../img/CCTV_2.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    /* 75% {
+      background: url("../img/support-services_2.jpg") no-repeat -200px 200px;
+      background-attachment: fixed;
+      background-size: cover;
+    } */
+    100% {
+      background: url("../img/light_bg_3.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+  @keyframes slidebgtech {
+    0% {
+      background: url("../img/CCTV_5.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    /* 25% {
+      background: url("../img/Maintenance_2.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    } */
+
+    50% {
+      background: url("../img/CCTV_7.jpg") no-repeat -250px -200px;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    /* 75% {
+      background: url("../img/kohler-gens.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    } */
+    100% {
+      background: url("../img/vehicle-tracking-5.jpg") no-repeat -200px center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .top-header {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .logo {
+    float: none;
+  }
+  .logo-word {
+    float: none;
+    width: 100%;
+    margin-top: 0;
+    z-index: 1;
+  }
+  .logo-word span {
+    font-size: 1.1rem;
+  }
+  .top-contact {
+    float: none;
+    z-index: 1;
+  }
+  .top-contact:after {
+    content: "";
+    border-bottom: 1px solid #02a9d3;
+    width: 100%;
+    display: block;
+    height: 1px;
+    margin: -5px 1px;
+    opacity: 0.2;
+  }
+  .top-email {
+    float: none;
+  }
+  .quote {
+    float: none;
+    margin-left: 10px;
+    margin-top: -10px;
+    z-index: 1;
+  }
+  .quote a {
+    transform: scale(0.8);
+  }
+  .about-menu {
+    background: none;
+    display: block;
+  }
+  .left-menu {
+    float: none;
+    position: fixed;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 1;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+    background: var(--primary-color);
+    overflow-y: hidden;
+  }
+  a.nav-icon {
+    position: fixed;
+    font-weight: 300;
+    transform: scale(0.88);
+  }
+  .btn-close {
+    position: fixed;
+    font-weight: 300;
+    transform: scale(0.8);
+  }
+  .menu-small {
+    margin-top: 200px;
+  }
+  .left-menu a::before {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  #about-showcase-container {
+    height: 80vh;
+    z-index: -1;
+  }
+  .about-showcase {
+    top: 30%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("../img/electricity_bg_2.jpg") no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
+  }
+  .about-title {
+    position: absolute;
+    background: #2b2e33;
+    color: #02a9d3;
+    opacity: 0.4;
+    width: 300px;
+    height: 50px;
+    margin: 150px auto;
+  }
+  #about-description {
+    height: 100%;
+  }
+  .desc-box {
+    float: none;
+    width: 100%;
+    height: 200%;
+    padding: 2rem;
+  }
+
+  .what-we-do {
+    color: #fff;
+  }
+  #vision-container {
+    height: 80vh;
+  }
+  .vision-showcase {
+    background: url("../img/electricity_bg_2.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .vision-tabs button {
+    width: 32%;
+    height: 50px;
+    font-size: 13px;
+    text-align: center;
+    justify-content: baseline;
+  }
+  .tabdisplay {
+    width: 100%;
+    height: 97%;
+    top: 2%;
+    margin: 0;
+    left: 0;
+    border: 0;
+  }
+  .tabcon {
+    height: 92.5%;
+    padding: 7px 2px;
+  }
+  .tabcon p {
+    font-size: 14px;
+  }
+  #about-advert-container {
+    height: 70vh;
+  }
+  .about-advert-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ad-box {
+    float: none;
+    width: 100%;
+  }
+  .ad-box a {
+    transform: scale(0.8);
+  }
+  .ad-box h2 {
+    font-size: 1.5rem;
+  }
+  .about-ad-text {
+    top: 0;
+    margin: 0;
+  }
+  .about-ad-img {
+    float: none;
+    margin: 0;
+    width: 300px;
+    height: 150px;
+    top: 50%;
+    box-shadow: 1px 1px 5px #02a9d3;
+  }
+
+  /* Service.html Page */
+  .service-showcase {
+    top: 30%;
+    background: url("../img/light_bg_2.jpg") no-repeat -50px 5px;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-showcase > .about-title {
+    width: 200px;
+  }
+  #services-title {
+    height: 45vh;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .services-caption {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    margin-left: -15px;
+  }
+  .services-caption p {
+    font-size: 13px;
+    padding: 2%;
+  }
+  .container {
+    display: inline-block;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+  }
+  .container > div {
+    grid-column: none;
+    width: 98%;
+    margin: 3px auto;
+    overflow: hidden;
+  }
+  #request {
+    height: 35vh;
+  }
+  .request-quote {
+    width: 100%;
+  }
+  .request-quote p {
+    float: none;
+    margin-top: 5px;
+  }
+  .request-quote a {
+    float: none;
+    transform: scale(0.8);
+  }
+  .sales {
+    animation: slidebgsales 10s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background: url("../img/light_bg_2.jpg");
+    background-attachment: fixed;
+    color: #fff;
+  }
+  .support {
+    animation: slidebgsupport 10s linear infinite 0s;
+    animation-timing-function: ease-in;
+    background: url("../img/vehicle-tracking-4.jpg");
+    background-attachment: fixed;
+    color: #fff;
+  }
+  .tech {
+    animation: slidebgtech 10s linear infinite 0s;
+    animation-timing-function: ease-out;
+    background: url("../img/CCTV_2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+  }
+
+  /* Contact.html page */
+  #contact-container {
+    height: 80vh;
+    margin-top: 140px;
+  }
+  .contact {
+    z-index: 1000;
+  }
+
+  @keyframes slidebgsales {
+    0% {
+      background: url("../img/Solar-Inverter.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    50% {
+      background: url("../img/ups-1.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    100% {
+      background: url("../img/electricity_bg_3.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+  @keyframes slidebgsupport {
+    0% {
+      background: url("../img/remote-monitoring-2.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    50% {
+      background: url("../img/CCTV_2.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    100% {
+      background: url("../img/CCTV_6.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+  @keyframes slidebgtech {
+    0% {
+      background: url("../img/CCTV_1.jpg") no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    50% {
+      background: url("../img/vehicle-tracking-5.jpg") no-repeat -250px -200px;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    100% {
+      background: url("../img/CCTV_7.jpg") no-repeat -200px center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+}

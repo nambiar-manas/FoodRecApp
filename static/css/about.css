@@ -1,0 +1,465 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#about-page-header {
+  top: 0;
+  margin: 0;
+}
+.top-header {
+  top: 0;
+  left: 0;
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-top: 20px;
+}
+
+.logo {
+  float: left;
+  background: #000;
+  border: #02a9d3;
+  visibility: hidden;
+}
+.logo-word {
+  float: left;
+  margin-top: 30px;
+  width: 25%;
+  padding: 5px;
+}
+.logo-word span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #02a9d3;
+}
+.top-contact {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+.top-contact:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 60%;
+  background: #02a9d3;
+  bottom: 0;
+  left: 0;
+  margin-left: 170px;
+  margin-bottom: 15px;
+  opacity: 0.2;
+}
+.top-contact p {
+  font-size: 12px;
+  padding: 5px;
+}
+.top-email {
+  float: left;
+  margin-left: 20px;
+  padding: 10px;
+}
+.top-email p {
+  font-size: 12px;
+}
+.quote {
+  float: left;
+  margin-left: 60px;
+  margin-top: 10px;
+  transition: 1s ease-in-out;
+}
+.quote a {
+  border: 1px solid #2b2e33;
+  color: #2b2e33;
+  font-weight: bold;
+  background: linear-gradient(to right, #02a9d3, #fff);
+}
+.about-menu {
+  background: #2b2e33;
+  height: 10vh;
+  opacity: 0.8;
+}
+.left-menu {
+  float: left;
+  margin-left: 100px;
+  margin-right: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+.left-menu li {
+  height: 47px;
+  background: #2b2e33;
+}
+.left-menu li a {
+  position: relative;
+}
+.left-menu a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(to right, #02a9d3, #2b2e33);
+  bottom: -15px;
+  z-index: 5;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+.left-menu a:hover::before {
+  opacity: 1;
+}
+.search-btn {
+  float: left;
+  background: #02a9d3;
+  width: 100px;
+  height: 40px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-top: 5px;
+  margin-top: 13px;
+  margin-left: 20px;
+  z-index: 2;
+}
+.search-btn:hover {
+  background: #2b2e33;
+  color: #02a9d3;
+  border: 1px solid #02a9d3;
+}
+.search-btn i {
+  color: #2b2e33;
+}
+.search-btn i:hover {
+  color: #02a9d3;
+}
+.search-input input {
+  height: 40px;
+  width: 470px;
+  padding: 12px 10px;
+  font-size: 1.2rem;
+  margin-top: 13px;
+  border: 1px solid #02a9d3;
+}
+
+#about-showcase-container {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* justify-content: center;
+  text-align: center;
+  align-items: center; */
+}
+.about-showcase {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../img/electricity_bg_2.jpg") no-repeat -600px -750px;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+.about-title {
+  position: absolute;
+  background: #2b2e33;
+  color: #02a9d3;
+  opacity: 0.6;
+  width: 300px;
+  height: 60px;
+  margin-left: 1025px;
+  margin-top: 220px;
+  border-radius: 90%;
+  padding-top: 12px;
+}
+.about-title h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  align-items: center;
+  margin-left: 20px;
+ 
+}
+.clear {
+  background: #fff;
+  width: 100%;
+  height: 5vh;
+}
+/* Who we are section */
+#about-description {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+.desc {
+  position: relative;
+  margin: 0;
+}
+.desc-box {
+  float: left;
+  width: 33.3%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  opacity: 0.8;
+  color: #fff;
+}
+.who-we-are {
+  background: #02a9d3;
+  color: #2b2e33;
+}
+.who-we-are h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.who-we-are p {
+  font-size: 16px;
+  font-weight: 300;
+}
+.what-we-do {
+  background: #2b2e33;
+  color: #02a9d3;
+}
+.what-we-do h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.what-we-do p {
+  font-size: 16px;
+  font-weight: 300;
+}
+.why-we-do {
+  background: #02a9d3;
+  color: #2b2e33;
+}
+.why-we-do h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.why-we-do p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Mission Vision Section */
+#vision-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+.vision-showcase {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../img/electricity_bg_2.jpg") no-repeat -600px -800px;
+  background-attachment: fixed;
+}
+.tabdisplay {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 70%;
+  height: 90%;
+  border: 1px solid #02a9d3;
+  transition: border 1s ease-in;
+}
+.vision-tabs {
+  width: 100%;
+  padding: 0;
+  background: #2b2e33;
+  opacity: 0.9;
+}
+.vision-tabs button {
+  display: inline-block;
+  width: 33%;
+  background-color: inherit;
+  color: #fff;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+}
+.vision-tabs button:not(:last-child) {
+  border-right: 1px solid #02a9d3;
+}
+
+.vision-tabs button:hover {
+  background: #02a9d3;
+  color: #2b2e33;
+}
+.vision-tabs button.active {
+  background: #02a9d3;
+  color: #2b2e33;
+}
+.tabcon {
+  background: #2b2e33;
+  width: 100%;
+  padding: 20px 20px;
+  height: 90%;
+  opacity: 0.6;
+  color: #fff;
+  z-index: 1;
+}
+.tabcon:not(:nth-child(2)) {
+  display: none;
+}
+.tabcon p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 40px;
+  text-align: justify;
+  z-index: 2;
+  transition: 1s ease-in;
+}
+#about-advert-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+.about-advert-showcase {
+  position: relative;
+  padding: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  transition: position 1s ease-in;
+}
+.ad-box {
+  position: absolute;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.ad-box a {
+  margin-top: 5%;
+  border: 1px solid #2b2e33;
+  color: #2b2e33;
+  font-weight: bold;
+  background: linear-gradient(to right, #02a9d3, #fff);
+  transition: 1s ease-in;
+}
+.ad-box h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  color: #2b2e33;
+}
+.ad-box h3 {
+  opacity: 0.5;
+}
+.about-ad-text {
+  position: absolute;
+  padding: 20px;
+  top: 20%;
+  margin-left: -50px;
+}
+.about-ad-img {
+  position: absolute;
+  float: left;
+  margin-top: 20px;
+  width: 600px;
+  height: 350px;
+  background: url("../img/Maintenance_1.jpg") no-repeat;
+  background-size: cover;
+  margin-left: 600px;
+  transition: 1s ease-in;
+  box-shadow: 1px 1px 5px #02a9d3;
+}
+
+/*Service.html  */
+.service-showcase {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../img/light_bg_2.jpg") no-repeat -200px -150px;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+#services-title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 25vh;
+}
+.services-caption {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background: #ddd;
+  box-shadow: 1px 1px 5px #02a9d3;
+  left: 10%;
+  top: 10%;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.services-caption p {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 20px;
+  text-align: center;
+}
+.services-caption h3 {
+  margin-top: 10px;
+  color: #02a9d3;
+  font-weight: 400;
+}
+#request {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.request-quote {
+  position: absolute;
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.request-quote a {
+  float: left;
+  border: 1px solid #2b2e33;
+  color: #2b2e33;
+  font-weight: bold;
+  background: linear-gradient(to right, #02a9d3, #fff);
+  margin-left: 10px;
+}
+.request-quote p {
+  float: left;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #2b2e33;
+  opacity: 0.7;
+  margin-top: 20px;
+}
