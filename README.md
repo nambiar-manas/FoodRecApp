@@ -10,7 +10,7 @@ Solution: A custom app that reduces the need for customers to bombard their wait
 
 ## Repository Structure
 
-In this repository, we showcase an illustrative example of a sample website using Italian dishes from the (Spoonacular API)[https://spoonacular.com/food-api]. In a real-world scenario, we would seamlessly integrate with the restaurant's operations, gathering ingredient data and images directly from their offerings. By providing this personalized touch, our platform enhances the dining experience by offering comprehensive insights into each dish, empowering customers to make informed choices. 
+In this repository, we showcase an illustrative example of a sample website using Italian dishes from the [Spoonacular API](https://spoonacular.com/food-api). In a real-world scenario, we would seamlessly integrate with the restaurant's operations, gathering ingredient data and images directly from their offerings. By providing this personalized touch, our platform enhances the dining experience by offering comprehensive insights into each dish, empowering customers to make informed choices. 
 
 
 - **`static/`**: Contains CSS files responsible for styling the website's appearance.
