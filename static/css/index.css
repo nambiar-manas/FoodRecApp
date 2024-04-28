@@ -1,0 +1,258 @@
+/*
+Template Name:Burger
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+
+
+/********************* center ****************/
+#center{ 
+ padding-top:50px;
+ padding-bottom:20px;
+ }
+.center_1 h1{ 
+ padding-top:10px;
+ padding-bottom:20px;
+ }
+.center_1 p{ 
+ line-height:28px;
+ }
+/****************** center_end ****************/
+/****************** middle ****************/
+#middle{ 
+ padding-top:30px;
+ padding-bottom:30px;
+ background-color: #f9e7e7;
+ }
+#middle .carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* The controlsy */
+#middle .carousel-control {
+	left: -12px;
+    height: 40px;
+	width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 90px;
+}
+#middle .carousel-control.right {
+	right: -12px;
+}
+/* The indicators */
+#middle .carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+#middle .carousel-indicators li {
+ background: #cecece;
+}
+#middle .carousel-indicators .active {
+ background: #428bca;
+}
+#middle .thumbnail {
+ background:none;
+ border:2px solid #c51c0a;
+}
+/****************** middle_end ****************/
+/****************** Spicy ****************/
+#Spicy{ 
+ padding-top:50px;
+ padding-bottom:50px;
+ /* background-image: ; */
+ background-repeat: repeat;
+ }
+.Spicy_1 h1{ 
+ padding-top:10px;
+ padding-bottom:20px;
+ }
+.Spicy_1 p{ 
+ line-height:28px;
+ } 
+#Spicy .big-btn{
+padding: 5px 0px 5px 0px;
+width: 210px;
+margin-top: 5px;
+}
+#Spicy .big-btn i{
+font-size: 45px;
+margin-right: 0px !important;
+}
+#Spicy .big-btn strong{
+font-size: 18px;
+text-shadow: 1px 2px 0px #34659B;
+color: #fff;
+line-height: 24px;
+}
+#Spicy .big-btn small{font-size: 75%;}
+#Spicy .android-btn{
+width: 240px;
+padding: 5px 10px 5px 0px;
+background-color: #000;
+border-color: #000;
+}
+.Spicy_2 ul{  
+ padding-top:20px;
+ }
+/****************** Spicy_end ****************/
+/****************** since ****************/
+#since{ 
+ padding-top:30px;
+ padding-bottom:30px;
+ background-color: #f1f1f14a;
+ }
+.since_1 h1{ 
+ padding-top:10px;
+ padding-bottom:20px;
+ }
+.since_1 p{ 
+ line-height:28px;
+ } 
+/****************** since_end ****************/
+/****************** place ****************/
+#place{ 
+ padding-top:30px;
+ padding-bottom:50px;
+ background-color: #f1f1f14a;
+ }
+.place_1 h1{ 
+ padding-top:10px;
+ padding-bottom:20px;
+ }
+.place_1 p{ 
+ line-height:28px;
+ } 
+/****************** place_end ****************/
+
+
+
+@media screen and (max-width : 767px){
+.center_1 h1 {
+ font-size: 55px;
+}
+#center {
+ padding-top: 20px;
+ padding-bottom: 20px;
+ text-align: center;
+}
+.center_1{ 
+ padding-bottom:20px;
+ }
+.Spicy_1 h1 {
+ padding-top: 10px;
+ padding-bottom: 10px;
+ font-size: 28px;
+}
+#Spicy {
+ padding-top: 20px;
+ padding-bottom: 20px;
+ text-align: center;
+}
+.since_1 h1 {
+ padding-bottom: 10px;
+  font-size: 30px;
+}
+#since {
+ padding-top: 10px;
+ padding-bottom: 0px;
+ background-color: #f1f1f14a;
+ text-align: center;
+}
+.since_1{ 
+ padding-bottom:20px;
+}
+#place {
+ padding-bottom:10px;
+ text-align: center;
+}
+}
+
+@media (min-width:470px) and (max-width:767px) {
+	
+} 
+
+@media (min-width:768px) and (max-width:960px) { 
+.center_1 h1 {
+ font-size: 27px;
+ padding-bottom:10px;
+}
+.center_1 p {
+ line-height: 23px;
+ font-size: 16px;
+}
+.Spicy_1 h1 {
+ padding-bottom: 10px;
+ font-size: 30px;
+}
+.Spicy_1 p {
+ line-height: 22px;
+ font-size: 16px;
+ padding-bottom:0px;
+}
+#Spicy .big-btn {
+ width: 100%;
+}
+.Spicy_2 ul {
+ padding-top: 0px;
+}
+.since_1 h1 {
+ padding-bottom: 10px;
+ font-size: 25px;
+}
+.since_1 p {
+ line-height: 22px;
+ font-size: 16px;
+}
+} 
+ 
+@media (min-width:961px) and (max-width:1200px) {
+.center_1 h1 {
+ font-size: 27px;
+ padding-bottom:10px;
+}
+.center_1 p {
+ line-height: 23px;
+ font-size: 16px;
+}
+.Spicy_1 h1 {
+ padding-bottom: 10px;
+ font-size: 30px;
+}
+.Spicy_1 p {
+ line-height: 22px;
+ font-size: 16px;
+}
+#Spicy .big-btn {
+ width: 100%;
+}
+.Spicy_2 ul {
+ padding-top: 0px;
+}
+.since_1 h1 {
+ padding-bottom: 10px;
+ font-size: 25px;
+}
+.since_1 p {
+ line-height: 22px;
+ font-size: 16px;
+}
+}
+
+@media (min-width:1201px) and (max-width:1320px) {
+.Spicy_1 h1 {
+ font-size: 55px;
+}
+.center_1 h1 {
+ font-size: 55px;
+}
+.since_1 h1 {
+ font-size: 55px;
+}
+}

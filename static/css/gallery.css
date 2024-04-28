@@ -1,0 +1,94 @@
+/*
+Template Name:Clientele
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+
+
+/********************* gallery ****************/
+#gallery{ 
+ padding-top:50px;
+ padding-bottom:50px;
+ }
+.gallery_1{ 
+ text-align:center;
+ }
+.gallery_1 h2 {
+ text-align: center;
+ font-size: 40px;
+ color: #000;
+}
+.gallery_1 h2 a {
+ text-align: center;
+ font-size: 50px;
+ color: #000;
+ font-weight: bold;
+ margin-right: 6px;
+}
+.gallery_1 p {
+ text-align: center;
+ padding-bottom: 60px;
+}
+.gallery_2{ 
+ padding-bottom:30px;
+ }
+.gallery_3{ 
+ padding-bottom:30px;
+ }
+.gallery_4{ 
+ padding-bottom:30px;
+ }
+.gallery_2 img{ 
+ border-radius: 90px 30px 90px 30px;
+ }
+.gallery_3 img{ 
+ border-radius: 50px 110px 50px 130px;
+ }
+.gallery_4 img{ 
+ border-radius: 150px 110px 100px 130px;
+ }
+/********************* gallery_end ****************/
+
+
+
+
+
+@media screen and (max-width : 767px){
+#gallery {
+ padding-top: 10px;
+ padding-bottom:10px;
+}
+.gallery_1 p {
+ padding-bottom: 20px;
+}
+.gallery_2 {
+ padding-bottom: 0px;
+}
+}
+
+@media (min-width:470px) and (max-width:767px) {
+	
+} 
+
+@media (min-width:768px) and (max-width:960px) { 
+#gallery {
+ padding-top:20px;
+ padding-bottom: 0px;
+}
+} 
+ 
+@media (min-width:961px) and (max-width:1200px) {
+#gallery {
+ padding-top:20px;
+ padding-bottom: 0px;
+}
+.gallery_1 p {
+ padding-bottom: 20px;
+}
+}
+
+@media (min-width:1201px) and (max-width:1320px) {
+
+}

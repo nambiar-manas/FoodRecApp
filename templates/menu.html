@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-/b+0Sr/Qvhk43b1zr6Juy5dbPEAfyF9n08SgUmIATG4kfggAWDuI2J7JzHO+bJFJ9d1y90E+uhshTpgEe8XYaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='css/global.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='css/index.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='css/gallery.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/font-awesome.min.css') }}"
+    />
+    <link
+      href="{{ url_for('static', filename='css/animate.css') }}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="{{ url_for('static', filename='css/landing.css') }}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <script src="{{ url_for('static', filename='js/jquery-2.1.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <title>Plate4U | Menu</title>
+  </head>
+  <body>
+    <section id="header_main" class="clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="header_main_1">
+              <p>Food recommendation made easy!</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="header_main_2">
+              <ul class="social-network social-circle">
+                <li>
+                  <a href="#" class="icoRss" title="Rss"
+                    ><i class="fa fa-rss"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="" title="Facebook"
+                    ><i class="icon brands fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="icoTwitter" title="Twitter"
+                    ><i class="icon fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="icoGoogle" title="Google +"
+                    ><i class="icon fa fa-google-plus"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="icoLinkedin" title="Linkedin"
+                    ><i class="icon fa fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="header_main_3 clearfix">
+              <div class="login">
+                <ul class="nav-login">
+                  <li class="tell_main_8">
+                    <a href="#" data-toggle="modal" data-target="#myModal1"
+                      >Login</a
+                    >
+                  </li>
+                  <li class="tell_main_9">
+                    <a href="#" data-toggle="modal" data-target="#myModal2"
+                      >Signup</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content modal-info">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body modal-spa">
+                      <div class="login-grids">
+                        <div class="login-right">
+                          <form action="#" method="post">
+                            <h3>Signin with your account</h3>
+                            <input
+                              type="text"
+                              value="Enter your mobile number or Email"
+                              name=" Email"
+                              onFocus="this.value = '';"
+                              onBlur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}"
+                              required=""
+                            />
+                            <input
+                              type="password"
+                              value="Password"
+                              name="Password"
+                              onFocus="this.value = '';"
+                              onBlur="if (this.value == '') {this.value = 'Password';}"
+                              required=""
+                            />
+                            <h4>
+                              <a href="#">Forgot password</a> /
+                              <a href="#">Create new password</a>
+                            </h4>
+                            <div class="single-bottom">
+                              <input type="checkbox" id="brand" value="" />
+                              <label for="brand"
+                                ><span></span>Remember Me.</label
+                              >
+                            </div>
+                            <input type="submit" value="SIGNIN" />
+                          </form>
+                        </div>
+
+                        <p>
+                          By logging in you agree to our
+                          <span>Terms and Conditions</span> and
+                          <span>Privacy Policy</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //login -->
+              <!-- signup -->
+              <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content modal-info">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body modal-spa">
+                      <div class="login-grids">
+                        <div class="login-right">
+                          <form action="#" method="post">
+                            <h3>Create your account</h3>
+                            <input
+                              type="text"
+                              value="Name"
+                              name="Name"
+                              onFocus="this.value = '';"
+                              onBlur="if (this.value == '') {this.value = 'Name';}"
+                              required=""
+                            />
+                            <input
+                              type="text"
+                              value="Mobile number"
+                              name="Mobile number"
+                              onFocus="this.value = '';"
+                              onBlur="if (this.value == '') {this.value = 'Mobile number';}"
+                              required=""
+                            />
+                            <input
+                              type="text"
+                              value="Email id"
+                              name="Email id"
+                              onFocus="this.value = '';"
+                              onBlur="if (this.value == '') {this.value = 'Email id';}"
+                              required=""
+                            />
+                            <input
+                              type="password"
+                              value="Password"
+                              name="Password"
+                              onFocus="this.value = '';"
+                              onBlur="if (this.value == '') {this.value = 'Password';}"
+                              required=""
+                            />
+
+                            <input type="submit" value="CREATE ACCOUNT" />
+                          </form>
+                        </div>
+
+                        <p>
+                          By logging in you agree to our
+                          <span>Terms and Conditions</span> and
+                          <span>Privacy Policy</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="header" class="cd-secondary-nav">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#dropdown-thumbnail-preview"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/"
+                ><img
+                  src="{{ url_for('static', filename='images/logo.png') }}"
+                  style="width: 130px; height: 50px"
+                  alt=""
+              /></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse"
+              id="dropdown-thumbnail-preview"
+            >
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <a href="/" class="hvr-underline-from-center">HOME</a>
+                </li>
+                <li>
+                  <a href="/" class="hvr-underline-from-center">CUISINES</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="gallery_1">
+            <h2><a href="#">Our Dishes</a></h2>
+            <hr class="hr_1" />
+            <p>Select from a plethora of mouth-watering dishes in our menu</p>
+          </div>
+
+          <div class="gallery-items">
+            {% for recipe in recipes %} {% if recipe['image'] %}
+            <div class="col-lg-4 col-sm-6 gallery-item">
+              <div class="gallery_2">
+                <p>
+                  <a href="/cluster/{{ recipe['cluster'] }}/{{ recipe['id'] }}"
+                    ><img
+                      src="{{ recipe['image'] }}"
+                      alt="{{ recipe['name'] }}"
+                      class="img_responsive"
+                  /></a>
+                </p>
+              </div>
+            </div>
+            {% endif %} {% endfor %}
+          </div>
+
+          <div class="gallery-navigation">
+            <button id="prevBtn" class="button">Previous</button>
+            <button id="nextBtn" class="button">Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer_main" class="clearfix">
+      <div class="col-sm-12 space_all">
+        <div class="footer_main_1">
+          <p>
+            Copyright &copy; 2024 MSDS 603 - Grp09 | Designed by :<a
+              href="https://www.elprinz.com"
+              target="_blank"
+            >
+              Elprinz.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <script>
+      $(document).ready(function () {
+        /*****Fixed Menu******/
+        var secondaryNav = $(".cd-secondary-nav"),
+          secondaryNavTopPosition = secondaryNav.offset().top;
+        $(window).on("scroll", function () {
+          if ($(window).scrollTop() > secondaryNavTopPosition) {
+            secondaryNav.addClass("is-fixed");
+          } else {
+            secondaryNav.removeClass("is-fixed");
+          }
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#Carousel").carousel({
+          interval: 3000,
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const galleryItems = document.querySelectorAll(".gallery-item");
+        const prevBtn = document.querySelector("#prevBtn");
+        const nextBtn = document.querySelector("#nextBtn");
+        let currentIndex = 0;
+
+        function showItems(index) {
+          galleryItems.forEach((item) => {
+            item.style.display = "none";
+          });
+
+          for (let i = index; i < index + 9 && i < galleryItems.length; i++) {
+            galleryItems[i].style.display = "block";
+          }
+        }
+
+        showItems(currentIndex);
+
+        prevBtn.addEventListener("click", function () {
+          currentIndex = Math.max(0, currentIndex - 9);
+          showItems(currentIndex);
+        });
+
+        nextBtn.addEventListener("click", function () {
+          currentIndex = Math.min(galleryItems.length - 1, currentIndex + 9);
+          showItems(currentIndex);
+        });
+      });
+    </script>
+  </body>
+</html>

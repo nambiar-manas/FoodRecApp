@@ -1,90 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A power solutions company" />
-    <meta
-      name="keywords"
-      content="inverters, power solution, solar panel, ups, captive power, maintenance services, batteries "
-    />
-    <title>Food Recommender App</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css"
-      integrity="sha256-2SjB4U+w1reKQrhbbJOiQFARkAXA5CGoyk559PJeG58="
-      crossorigin="anonymous"
-    />
-    <!-- <link rel="stylesheet" href="../static/css/main.css" /> -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-/b+0Sr/Qvhk43b1zr6Juy5dbPEAfyF9n08SgUmIATG4kfggAWDuI2J7JzHO+bJFJ9d1y90E+uhshTpgEe8XYaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/global.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" />
+    <link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet" type="text/css" media="all">
+    <script src="{{ url_for('static', filename='js/jquery-2.1.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 
+    <title>
+      Plate4U | Recipes
+    </title>
   </head>
-  <body>
-    <section id="main_recipe">
-      <h2>{{ selected_dish['name'] }}</h2>
-      <div class="recipe_display">
-        <div class="recipe_display_box">
-          <a href="/cluster/{{ selected_dish['cluster'] }}/{{ selected_dish['id']}}">
-            {% if selected_dish['image'] %}
-            <img src="{{ selected_dish['image'] }}" alt="{{ selected_dish['name'] }}">
-            {% endif %}
-          </a>
-        </div>
-        <div class="recipe_display_box">
-            <h3>Cuisines</h3>
-            <ul class="no-decoration">
-                {% for cuisine in selected_dish['cuisines'] %}
-                <li>
-                    {{cuisine}}
-                </li>
-                {% endfor %}
-            </ul>
-            <h3>Description</h3>
-            <p>
-              {% set clean_summary = selected_dish['summary'].replace('<br>', '') %}
-              {{ clean_summary }}
-            </p>
-        </div>
-      </div>
-    </section>
-    <section id="neighbour_recipes">
-      <h2>Recommended Recipes</h2>
-      <div class="neighbours">
-        {% for recipe in cluster_dishes %}
-          {% if recipe['id'] != selected_dish['id'] %}
-            <div class="neighbours-box">
-              <a href="/cluster/{{ recipe['cluster'] }}/{{ recipe['id']}}">
-                <h3>{{ recipe['name'] }}</h3>
-                <img src="{{ recipe['image'] }}" alt="{{ recipe['name'] }}">
-              </a>
-            </div>
-          {% endif %}
-        {% endfor %}
-        <a class="btn_home" href="/">View Recipes</a>
-      </div>
-    </section>
-    <section id="team-container">
-      <div class="team">
-        <h2>Meet the Team</h2>
-        <p>...We are backed by a team of professionals</p>
-      </div>
-    </section>
-    <section id="main-footer">
-      <footer>
-        <p>
-          Copyright &copy; 2024 MSDS 603 - Grp09 | Designed by :
-          <a href="https://www.elprinz.com" target="_blank"> Elprinz.com</a>
-        </p>
-      </footer>
-    </section>
+<body>
+<section id="header_main" class="clearfix">
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-4">
+    <div class="header_main_1">
+	 <p>Food recommendation made easy!</p>
+	</div>
+   </div>
+   <div class="col-sm-4">
+    <div class="header_main_2">
+	  <ul class="social-network social-circle">
+			<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+			<li><a href="#" class="" title="Facebook"><i class="icon brands fa-linkedin"></i></a></li>
+			<li><a href="#" class="icoTwitter" title="Twitter"><i class="icon fa fa-twitter"></i></a></li>
+			<li><a href="#" class="icoGoogle" title="Google +"><i class="icon fa fa-google-plus"></i></a></li>
+			<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="icon fa fa-linkedin"></i></a></li>
+       </ul>
+	</div>
+   </div>
+    <div class="col-sm-4">
+	 <div class="header_main_3 clearfix">
+	  <div class="login">	            
+				<ul class="nav-login">
+					<li class="tell_main_8"><a href="#" data-toggle="modal" data-target="#myModal1">Login</a></li>
+					<li class="tell_main_9"><a href="#" data-toggle="modal" data-target="#myModal2">Signup</a></li>
+				</ul>
+			</div>
+	  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content modal-info">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						</div>
+						<div class="modal-body modal-spa">
+							<div class="login-grids">
+							
+									<div class="login-right">
+										<form action="#" method="post">
+											<h3>Signin with your account </h3>
+											<input type="text" value="Enter your mobile number or Email" name=" Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
+											<input type="password" value="Password" name="Password" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Password';}" required="">	
+											<h4><a href="#">Forgot password</a> / <a href="#">Create new password</a></h4>
+											<div class="single-bottom">
+												<input type="checkbox"  id="brand" value="">
+												<label for="brand"><span></span>Remember Me.</label>
+											</div>
+											<input type="submit" value="SIGNIN" >
+										</form>
+									</div>
+									
+								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //login -->
+			<!-- signup -->
+			<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content modal-info">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						</div>
+						<div class="modal-body modal-spa">
+							<div class="login-grids">
+							
+									<div class="login-right">
+										<form action="#" method="post">
+											<h3>Create your account </h3>
+											<input type="text" value="Name" name="Name" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}" required="">
+											<input type="text" value="Mobile number" name="Mobile number" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Mobile number';}" required="">
+											<input type="text" value="Email id" name="Email id" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Email id';}" required="">	
+											<input type="password" value="Password" name="Password" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Password';}" required="">	
+											
+											<input type="submit" value="CREATE ACCOUNT" >
+										</form>
+									</div>
+								
+								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+     </div> 
+	</div>
+  </div>
+ </div>
+</section>
+<section id="header" class="cd-secondary-nav">
+ <div class="container">
+  <div class="row">
+   <nav class="navbar navbar-default">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dropdown-thumbnail-preview">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" style="width: 130px; height: 50px;" alt=""></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="dropdown-thumbnail-preview">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/" class="hvr-underline-from-center">HOME</a></li>
+		    <li><a href="/" class="hvr-underline-from-center">CUISINES</a></li>
+  
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+  </div>
+ </div>
+</section>
+<section id="Spicy" class="clearfix"> 
+  <div class="col-sm-6">
+   <div class="Spicy_2">
+    <a href="/cluster/{{ selected_dish['cluster'] }}/{{ selected_dish['id']}}">
+      {% if selected_dish['image'] %}
+        <img src="{{ selected_dish['image'] }}" alt="abc" style=" border-radius: 100px; background-color: transparent;" class="img_responsive">
+      {% endif %}
+    </a>
+  
+ </div>
+  </div>
+  <div class="col-sm-6">
+   <div class="Spicy_1">
+    <h1>{{ selected_dish['name'] }}</h1>
+    <p>
+      {% set clean_summary = selected_dish['summary'].replace('<b>', '') | replace('</b>', '') %}
+      {% set summary_lines = clean_summary.split('.') %}
+      {% for line in summary_lines[:7] %}
+        {{ line }}.
+      {% endfor %}
+    </p>
+    <a href="/checkout" class="btn"> ORDER NOW </a>	 
+ </div>
+  </div>
+</section>
 
-    <script src="js/stickymenu.js"></script>
-  </body>
+<section id="middle" class="clearfix">
+  <div class="col-sm-12 space_all">
+    <div id="Carousel" class="carousel slide">                
+      <ol class="carousel-indicators">
+        {% for i in range(num_items) %}
+          <li data-target="#Carousel" data-slide-to="{{ i }}" {% if i == 0 %}class="active"{% endif %}></li>
+        {% endfor %}
+      </ol>                 
+      <!-- Carousel items -->
+      <div class="carousel-inner">                    
+        {% for i in range(num_items) %}
+          <div class="item {% if i == 0 %}active{% endif %}">
+            <div class="row">
+              {% for j in range(i * items_per_slide, ((i + 1) * items_per_slide) | min(total_items)) %}
+                {% if cluster_dishes[j]['id'] != selected_dish['id'] %}
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="/cluster/{{ cluster_dishes[j]['cluster'] }}/{{ cluster_dishes[j]['id']}}">
+                      <img src="{{ cluster_dishes[j]['image'] }}" alt="{{ cluster_dishes[j]['name'] }}" class="img_responsive">
+                    </a>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div><!--.row-->
+          </div><!--.item-->
+        {% endfor %}
+      </div><!--.carousel-inner-->
+    </div><!--.Carousel-->               
+  </div>
+</section>
+
+	</div>
+	<div class="col-sm-3">
+	 <div class="footer_3">
+
+	</div>
+	</div>
+	<div class="col-sm-4">
+	 <div class="footer_4">
+	</div>
+	</div>
+  </div>
+</section>
+<section id="footer_main" class="clearfix">
+	 <div class="col-sm-12 space_all">
+	  <div class="footer_main_1">
+      <p>Copyright &copy; 2024 MSDS 603 - Grp09 | Designed by :<a href="https://www.elprinz.com" target="_blank"> Elprinz.com</a></p>
+	  </div>
+	 </div>
+</section>
+<script>
+$(document).ready(function(){
+	/*****Fixed Menu******/
+	var secondaryNav = $('.cd-secondary-nav'),
+	   secondaryNavTopPosition = secondaryNav.offset().top;
+		$(window).on('scroll', function(){
+			if($(window).scrollTop() > secondaryNavTopPosition ) {
+				secondaryNav.addClass('is-fixed');	
+			} else {
+				secondaryNav.removeClass('is-fixed');
+			}
+		});	
+		
+});
+</script>
+<script>
+	$(document).ready(function() {
+    $('#Carousel').carousel({
+        interval: 5000
+    })
+});
+	</script>
+</body>
+
 </html>

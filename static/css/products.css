@@ -1,0 +1,90 @@
+/*
+Template Name:Burger
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+
+
+/********************* products ****************/
+#products{ 
+ padding-top:30px;
+ padding-bottom:30px;
+ background-color: #F8F8F8;
+ } 
+.products_1{ 
+ text-align:center;
+ border-bottom: 1px solid #e0e0e0;
+ padding-bottom:15px;
+ }
+.products_3{ 
+ padding-top:60px;
+ text-align:center;
+ }
+.products_3 img{ 
+ border-radius: 20px 70px 20px 70px;
+ } 
+.products_2 { 
+ text-align: center;
+ box-shadow: 0 0 1px 3px #f3f2f2;
+ padding: 18px 10px 6px 10px;
+ margin-top:30px;
+ background-color: #e0e4e7;
+ }
+.products_2 p{ 
+ padding-top:10px;
+ padding-bottom:0px;
+ } 
+.products_2 p a{ 
+ color: #c51c0a;
+ font-size: 25px;
+ font-weight: bold;
+ } 
+ 
+ 
+ .products_4 { 
+ text-align: center;
+ box-shadow: 0 0 1px 3px #f3f2f2;
+ padding: 18px 10px 6px 10px;
+ margin-top:30px;
+ background-color: #fff;
+ }
+.products_4 p{ 
+ padding-top:10px;
+ padding-bottom:0px;
+ } 
+.products_4 p a{ 
+ color: #c51c0a;
+ font-size: 25px;
+ font-weight: bold;
+ } 
+/********************* products_end ****************/
+
+
+
+
+@media screen and (max-width : 767px){
+.products_1 h2{
+ font-size:30px;
+}
+}
+
+@media (min-width:470px) and (max-width:767px) {
+	
+} 
+
+@media (min-width:768px) and (max-width:960px) { 
+#products {
+ padding-top: 30px;
+ padding-bottom: 40px;
+}
+} 
+ 
+@media (min-width:961px) and (max-width:1200px) {
+
+}
+
+@media (min-width:1201px) and (max-width:1320px) {
+
+}

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+}
+#landing {
+background: url("../images/bg3_edited.png");
+background-size: cover;
+background-position: center;
+height: 100vh;
+display: flex;
+flex-direction: column;
+font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  sans-serif;
+}
+
+.logo-container {
+position: absolute;
+top: 20px;
+left: 50%;
+transform: translateX(-50%) rotate(-10deg); 
+display: flex;
+align-items: center;
+transform-origin: center;
+}
+
+.logo-container::before {
+content: "";
+position: absolute;
+top: -10px;
+left: calc(50% - 20px);
+width: 0;
+height: 0;
+border-left: 20px solid transparent;
+border-right: 20px solid transparent;
+border-bottom: 20px solid #e7e6e6;
+z-index: -1;
+}
+
+.logo h1 {
+font-family: "Fann Grotesque", sans-serif;
+font-weight: bold;
+color: rgb(244, 204, 123);
+padding: 10px 20px; 
+border-radius: 5px; 
+}
+
+.buttons {
+display: flex;
+margin-left: auto; 
+}
+
+.buttons a {
+color: white;
+text-decoration: none;
+margin-left: 10px;
+}
+
+.message_container {
+margin-top: 20%;
+margin-bottom: auto;
+margin-left: 30px;
+margin-right: auto;
+z-index: 1;
+}
+
+.landing {
+width: 60%;
+padding: 10px;
+border-radius: 10px;
+margin-top: 20px;
+margin-left: 10px;
+}
+.message_container h1 {
+color: #000;
+font-family: "Amatic SC", sans-serif;
+font-size: 6.16rem;
+text-align: inherit;
+line-height: 1;
+font-weight: 900;
+letter-spacing: -0.02em;
+}
+.message_container p {
+color: #000;
+font-family: "Montserrat Alternates", sans-serif;
+font-size: 1.5rem;
+text-align: inherit;
+line-height: 1.3;
+font-weight: 300;
+letter-spacing: -0.02em;
+}
+
+.button-container {
+display: flex;
+margin-top: 20px;
+}
+
+.button {
+margin: 0 10px;
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+background-color: #e7e6e6;
+color: #333;
+text-decoration: none;
+font-size: 1em;
+}
+.button:hover {
+background-color: rgb(244, 204, 123);
+color: #333;
+text-decoration: none;
+}
+
+.gallery-navigation {
+position: relative;
+/* left: 50%; */
+transform: translateX(40%);
+}
+.gallery-navigation button {
+  width: 10%;
+  height: auto;
+  background: #d32f02;
+  color: #e7e6e6;
+}
+
+
+/* Checkout page */
+
+#checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("../images/bg2_edited.png");
+  background-size: cover;
+  background-position: center;
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}

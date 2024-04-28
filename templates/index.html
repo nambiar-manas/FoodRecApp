@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/landing.css') }}"
+    />
+
+    <title>Plate4U | Home</title>
+  </head>
+
+  <body>
+    <section id="landing">
+      <div class="logo-container">
+        <div class="logo">
+          <h1>Plate4U</h1>
+        </div>
+      </div>
+      <div class="message_container">
+        <h1>Welcome to Joe's Pasta</h1>
+        <div class="landing">
+          <div class="message">
+            <!-- <h3>Your Culinary Journey Begins Here!</h3> -->
+            <p>Most tantalizing pasta in all of SF!</p>
+            <p>
+              Explore our top recommendations now and embark on a culinary
+              adventure like no other.
+            </p>
+          </div>
+        </div>
+        <div class="button-container">
+          <a href="/menu" class="button">Explore Menu</a>
+          <a href="/cuisine" class="button">View Recommendations</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
