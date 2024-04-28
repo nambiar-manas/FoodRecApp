@@ -1,5 +1,7 @@
 # Plate4U
 
+A digital menu service for restaurants that provides recommendations to each customer 
+
 ## Introduction
 
 This repository hosts the source code for a web application designed to provide recipe recommendations based on ingredient similarity. 
