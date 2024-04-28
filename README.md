@@ -23,7 +23,7 @@ In this repository, we showcase an illustrative example of a sample website usin
 
 ## Dependencies
 
-To run the Like It or Not web application, ensure you have the following dependencies installed:
+To run the web application, we used the following library:
 
 - Flask==2.1.0
 - gunicorn==20.1.0
