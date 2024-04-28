@@ -1,8 +1,8 @@
-# Like It or Not
+# Plate4U
 
 ## Introduction
 
-Welcome to the Like It or Not GitHub repository! This repository hosts the source code for a web application designed to provide recipe recommendations based on ingredient similarity. 
+This repository hosts the source code for a web application designed to provide recipe recommendations based on ingredient similarity. 
 
 Problem: Through surveys and research, it's clear that a significant challenge for restaurant staff, particularly waiters and hostesses, is customers taking an extended time to place their orders. This delay disrupts the smooth flow of service, causing waiters to struggle with uneven attention allocation between tables. Additionally, it results in the formation of long queues, adding to the workload of hostesses. Ultimately, these delays hinder the efficient turnover of tables, impacting both customer satisfaction and the restaurant's overall performance.
 
