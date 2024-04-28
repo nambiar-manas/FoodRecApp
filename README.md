@@ -22,6 +22,7 @@ In this repository, we showcase an illustrative example of a sample website usin
 - **`app.py`**: Script for setting up the Flask web application, handling recipe recommendations, and serving specific recipe details.
 - **`dfRecommendation`**: DataFrame containing the recommendations utilized by the website.
 - **`requirements.txt`**: Lists the dependencies required to run the application.
+- **`entrepreneur_dish2vec.ipynb`**: Contains the Nueral Network Architecture that will be used once we get user data that will compute predictions of dish that will be chosen.
 
 ## Dependencies
 
