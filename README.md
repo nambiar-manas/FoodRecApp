@@ -23,7 +23,7 @@ In this repository, we showcase an illustrative example of a sample website usin
 
 ## Dependencies
 
-To run the web application, we used the following library:
+To run the web application, we used the following libraries:
 
 - Flask==2.1.0
 - gunicorn==20.1.0
