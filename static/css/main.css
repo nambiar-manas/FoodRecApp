@@ -824,118 +824,6 @@ ol.no-decoration li {
   color: #fff;
   z-index: 15;  
 }
-/* Team section */
-
-#team-container {
-  position: relative;
-  width: 100%;
-  height: 70vh;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-.team {
-  position: absolute;
-  background: url("../img/team-1.jpg") no-repeat -400px;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-attachment: fixed;
-  z-index: -5;
-}
-.team:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: var(--primary-color);
-  background-size: cover;
-  opacity: 0.7;
-  z-index: -3;
-}
-.team h2 {
-  margin-top: 150px;
-  font-size: 4rem;
-  color: #d32f02;
-}
-.team p {
-  color: #fff;
-}
-
-/* Contact section */
-#contact-container {
-  width: 100%;
-  height: 70vh;
-  overflow: hidden;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-.contact {
-  width: 100%;
-  height: 100%;
-  background: url("../img/electricity_bg_3.jpg") no-repeat -500px -400px;
-  background-attachment: fixed;
-  overflow: hidden;
-  /* z-index: -10; */
-}
-.contact h2 {
-  margin-top: 50px;
-  font-size: 3rem;
-  font-weight: 500;
-  color: #d32f02;
-  padding: 5px;
-}
-.form {
-  position: relative;
-}
-.input {
-  float: left;
-  padding-right: 20px;
-}
-.input div {
-  margin-left: 300px;
-  padding: 5px;
-}
-.input div input {
-  height: 40px;
-  width: 250px;
-  padding: 12px 10px;
-}
-#textarea {
-  float: left;
-  margin-right: 0;
-  width: 450px;
-  height: 150px;
-  border: solid 1px #d32f02;
-  box-sizing: border-box;
-  padding: 12px 10px;
-}
-.btn-contact {
-  margin-top: 20px;
-  margin-left: 600px;
-  float: none;
-  display: inline-block;
-  padding: 10px 30px;
-  background: #d32f02;
-  color: #fff;
-  border: solid 1px #2b2e33;
-  border-radius: 5px;
-}
-.btn-contact:hover {
-  padding: 0.5rem 1.5rem;
-  background: #2b2e33;
-  color: #fff;
-  border: solid 1px #fff;
-  transition: ease-out 0.5s all;
-}
 
 #main-footer {
   background: var(--primary-color);
@@ -1530,34 +1418,38 @@ footer a:hover {
   .services {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     gap: 1em;
     margin-left: 30px;
     margin-right: 5px;
     margin-bottom: 100px;
   }
   #services-container a {
-    position: absolute;
-    margin: 1790px 0 0 60px;
+    position: relative;
+    margin-left: -50%;
+    /* margin: 1790px 0 0 60px; */
   }
-  .box1 {
-    width: 300px;
-  }
-  .box2 {
-    width: 300px;
+
+  .services-box {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
     height: 350px;
   }
-  .box3 {
-    width: 300px;
-    height: 350px;
+ 
+  .services-box img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+    object-fit: fill;
+    z-index: -5;
   }
-  .box4 {
-    width: 300px;
-    height: 350px;
-  }
-  .box5 {
-    width: 300px;
-    height: 350px;
-  }
+
+
+ 
   /* Contact Section */
 
   #contact-container {

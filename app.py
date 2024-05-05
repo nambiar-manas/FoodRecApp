@@ -37,11 +37,17 @@ for dish in data:
 
 # Define the home page is the landing page
 @app.route('/', methods=['GET'])
+def landing():
+    return render_template('landing.html')
+
+
+# Define the demo page
+@app.route('/index', methods=['GET'])
 def index():
     return render_template('index.html')
 
-# Define the menu page
 
+# Define the menu page
 
 @app.route('/menu', methods=['GET'])
 def menu():

@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary-color: #d32f02;
+    --secondary-color:rgb(244, 204, 123);
+    --light: #e7e6e6;
+    --primary-color2: rgba(211, 47, 2, 0.9);
+}
+
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+#contact {
+background-color: var(--primary-color);
+background-size: cover;
+background-position: center;
+height: 12vh;
+display: flex;  
+flex-direction: column;
+font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  sans-serif;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-10deg); 
+    display: flex;
+    align-items: center;
+    transform-origin: center;
+    }
+    
+    .logo-container::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 20px);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #e7e6e6;
+    z-index: -1;
+    }
+    
+    .logo h1 {
+    font-family: "Fann Grotesque", sans-serif;
+    font-weight: bold;
+    color: rgb(244, 204, 123);
+    padding: 10px 20px; 
+    border-radius: 5px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    h1,
+    h2 {
+        font-weight: 300;
+        line-height: 1.2;
+        margin: 10px 0;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+    image {
+        width: 100%;
+        height: auto;
+    }
+
+    /* showcase */
+    #showcase {
+        height: 360px;
+        background-color: var(--primary-color);
+        color: #000;
+        position: relative;
+        font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+
+    #showcase::before,
+    #showcase::after {
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 50%;
+        right: 0;
+        left: -50;
+        bottom: -44px;
+        background: var(--primary-color);
+        transform: skewY(-6deg);
+    }
+
+
+
+    #showcase h1 {
+        font-size: 3.5rem;
+        font-weight: 900;
+        font-family: "Amatic SC", sans-serif;
+    }
+
+    #showcase h2 {
+        font-size: 2rem;
+        font-family: "Amatic SC", sans-serif;
+        font-weight: 900;
+        line-height: 1;
+        margin-top: 5px;
+    }
+
+
+    #showcase p {
+        margin: 20px 0;
+        font-size: 1.1rem;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+    }
+
+    #showcase .grid {
+        overflow: visible;
+        grid-template-columns: 55% 45%;
+        gap: 30px;
+    }
+
+    .showcase-form {
+       position: relative;
+       top: 50px;
+       height: 350px;
+       width: 400px;
+       padding: 40px;
+       z-index: 100;
+       justify-self: flex-end;
+    }
+    .showcase-form  .form-controls {
+        margin: 20px 0;
+    }
+    .showcase-text {
+        position: relative;
+        top: 30px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: var(--primary-color);
+        color: #000;
+        height: 350px;
+    }
+    
+
+    .showcase-form  input[type="text"], 
+    .showcase-form  input[type="email"] {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid var(--light);
+        padding: 10px;
+        font-size: 0.9rem;
+        font-family:"Montserrat Alternates", sans-serif ;
+    }
+
+    .showcase-form input {
+        outline: none;
+      
+    }
+
+
+    /* Team */
+
+    .team::before,
+    .team::after {
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 50%;
+        right: 0;
+        left: 0;
+        top: 423px;
+        background: var(--primary-color);
+        transform: skewY(6deg);
+
+    }
+
+    .team {
+        background: url('../images/bg4.png') no-repeat center center/cover;
+        padding-top: 100px;
+    }
+
+    .team .cards {
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        background-color: rgb(244, 204, 123, 0.6);
+        color: #000;
+        height: 82%;
+        
+    }
+    .team .cards:hover {
+        transform: translateY(-10px);
+        background-color: rgb(244, 204, 123,1);
+    }
+
+    .grid-5 img {
+        width: 100px;
+        height: 100px;
+        object-fit: fill;
+        border-radius: 100px;
+    }
+    .team h1 {
+        font-size: 3rem;
+        font-family: "Amatic SC", sans-serif;
+        font-weight: 1000;
+        line-height: 1;
+        margin-bottom: -50px;
+        color: var(--secondary-color);
+    }
+
+    .team h2 {
+        font-size: 1.5rem;
+        font-family: "Amatic SC", sans-serif;
+        font-weight: 1000;
+        line-height: 1;
+        margin-top: 5px;
+        
+    }
+
+    .team p {
+        font-size: 1rem;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 300;
+        line-height: 1;
+  
+    }
+
+    /* Utilities */
+    .container {
+        max-width: 1100px;
+        overflow: auto;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    .grid-5 {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    
+
+    .cards {
+        background: #fff;
+        color: #333;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        cursor: pointer;
+        background: var(--primary-color);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-family: "Montserrat Alternates", sans-serif;
+    }
+
+    .btn:hover {
+        background: var(--secondary-color);
+        color: #333;
+    }
+
+    .btn-outline {
+        background-color: var(--secondary-color);
+        color: #333;
+        border: 1px solid var(--primary-color);
+        font-family:"Montserrat Alternates", sans-serif ;
+    }
+
+    .btn-outline:hover {
+        background: var(--primary-color);
+        color: #fff;
+        border: 1px solid var(--secondary-color);
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .my-5 {
+        margin: .1rem;
+    }
+
+    .py-5 {
+        padding: 1rem 0;
+    }
+
+
+
+    /* Tablet and Under */
+
+    @media (max-width: 768px) {
+
+       
+        .grid,
+        .grid-5,
+        #showcase .grid,
+        #showcase .grid-5
+        .team .grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .grid-5 {
+            grid-template-columns: 1fr;
+        }
+
+        .showcase-form {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            justify-self: center;
+            margin: auto;
+        }
+
+        .showcase-text {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .team {
+            padding-top: 400px;
+        }
+
+        .team::before,
+        .team::after {
+            top: 423px;
+        }
+    }
+
+
+    /* Mobile */
+
+    @media (max-width: 500px) {
+
+       
+        .showcase-form{
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            justify-self: center;
+            margin: auto;
+        }
+
+        .showcase h1 {
+            font-size: 2.5rem;
+        }
+
+        .showcase h2 {
+            font-size: 1.5rem;
+        }
+
+        .showcase p {
+            font-size: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 0.8rem;
+        }
+
+        .btn-outline {
+            font-size: 0.8rem;
+
+            margin-top: 80px;
+            z-index: 100;
+
+        }
+
+        .team::before,
+        .team::after {
+            top: 423px;
+        }
+
+        .team {
+            padding-top: 550px;
+        }
+
+        .team h1 {
+            font-size: 2.5rem;
+        }
+
+        .team h2 {
+            font-size: 1.5rem;
+        }
+
+        .team p {
+            font-size: 1rem;
+        }
+    }
